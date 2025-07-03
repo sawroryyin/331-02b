@@ -20,8 +20,9 @@ defineProps<{
 <template>
   <div class="event-class">
     <div class="event-card">
-      <h2>{{ event.title }}</h2>
-      <span>@{{ event.time }} on {{  event.date }}</span>
+      <span>{{ event.category }}</span>
+      <br>
+      <span>{{ event.organizer }}</span>
     </div>
   </div>
 </template>
@@ -33,6 +34,7 @@ defineProps<{
   cursor: pointer;
   border: 1px solid #39495c;
   margin-bottom: 18px;
+  text-align: right;
 }
 .event-card:hover {
   transform: scale(1.01);
